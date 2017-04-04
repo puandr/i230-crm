@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>I230 Infosüsteemide analüüs ja projekteerimine, projekt, Andrei Pugatšov</title>
+	<link rel="stylesheet" type="text/css" href="css/project.css">
+</head>
+
+<body>
+
+<ul>
+	<li><a href="index.html">Algus</a></li>
+	<li><a class="active" href="ylesanne-1.htm">Analüüs</a></li>
+	<li><a href="nouded.html">Nõuded</a></li>
+	<li><a href="usecase.html">Use Case High Level View</a></li>
+</ul>
+
+<div class = "main-body">
+
+
+<h2>Sissejuhatus</h2>
+Vaadeldavaks organsatsiooniks on personaliotsingu ettevõte. Peamine eesmärk/teenus on kliendi tellimuse järgi leida neile sobiliku kandidaadi vajaliku ameti positsiooni täitmiseks. Lisateenusteks on:
+<ol>
+	<li>Tööandja personalialane konsulteerimine. Abistada tööandjad soovitustega: mis suunas ja kuidas võiks töötajaid arendada.</li>
+	<li>Töövõtja personalialane konsulteerimine. Tuua välja töötaja tugevad ja nõrgad küljed ja anda soovitused arengu suundade osas.</li>
+	<li>Personalitöötajate koolitused. Anda nõuandeid, kuidas personalitöötajad saaksid paremini töötada.</li>
+	<li>Muud teenused personalitöö vallast.</li>
+</ol>
+
+Igapäevased tegevused on järgnevad:
+
+<ol>
+	<li>Klientidega kohtumine, nende vajaduse selgitamine, pakkumiste tegemine.</li>
+	<li>Töökuulutuste koostamine ning avaldamine pabermeedias ja interneti kanalite kaudu.</li>
+	<li>Kandidaatide otsimine, sobilikke kandidaatide välja sorteerimine, sobilike kandidaatide intervjueerimine ja testimine.</li>
+	<li>Finaalide (3-4 lõppkandidaati ja tööandja) kohtumise läbiviimine.</li>
+	<li>Koolituste läbiviimine.</li>
+</ol>
+
+Ettevõte võib jämedalt jagada kaheks osaks: administratiiv töötajad ja konsultandid.
+Konsultandid:
+<ol>
+	<li>Kohtuvad klientidega, selgitamas nende vajadused</li>
+	<li>Valivad potentsiaalseid kandidaate, kohtuvad nendega</li>
+	<li>Teevad lõpliku valiku kandidaatidest, kes kohtub tööandjaga</li>
+	<li>Korraldavad koolitusi</li>
+</ol>
+
+Administratiiv töötajad:
+<ol>
+	<li>Koostavad pakkumisi</li>
+	<li>Koostavad töökuulutusi</li>
+	<li>Organiseerivad ettevõte igapäevast tööd</li>
+	<li>Teevad raamatupidamisega seotud töid</li>
+	<li>Korraldavad kandidaatide testimise</li>
+</ol>
+
+Organisatsiooni poolt kasutatavad infosüsteemid (IS):
+<ol>
+	<li>CRM, peamine IS, kus on klientide nimekiri, koos vajalike andmetega, kandidaatide ankeedid (CV, märkused, testide tulemused), arhiiv vanadest projektidest ja käimasolevad projektid.</li>
+	<li>Raamatupidamis programm.</li>
+	<li>Testimiskeskkond, osaliselt sisse ostetud teenusena, osaliselt CRM-s.</li>
+	<li>Veebileht.</li>
+</ol>
+
+Keskendun peamisele IS-le, mis antud organisatsioonis kannab nime CRM.
+<h2>Porteri mudel</h2>
+Alljärgnevalt seon Porteri Väärtusahela mudelit ettevõttes kasutatava CRM-ga.
+
+<p>
+	<img src="pics/porter.png">
+</p>
+
+<h3>Primary Activities</h3>
+<p>
+Inbounnd Logistic – Antud juhul see võiks olla sissetulevad tellimused ja kandidaadid kes kandideerivad mingil konkursile. CRM-s on kõik käimas olevad ja potentsiaalsed projektid. Sammuti CRM-s on kandidaatide andmebaas, see on seotud veebilehega, niimoodi et veebilehel täidetud ankeet/CV sattub CRM.
+</p>
+<p>
+Operations – kandideerivatest inimhulgast sobilike kandidaatide välja valimine, testimine, intervjueerimine, kliendi nõustamine otsitava kandidaati suhtes. CRM-s saab vaadata kandideeritavate inimeste CV ja teha esmase valiku. Seejärgi võib kokku leppida testimiseks, testi tulemused on salvestatud CRM-s. CRM-s saab paika panna intervjuude ajakava, niimoodi, et kandidaadid ei näeks üks teist ja oleks ka üldine ülevaade sellest, kui palju ja millal tuleb vestluseks.
+</p>
+<p>
+Outbound Logistics – see võiks olla finaal, ehk lõpliku kandidaadi valimine. Kuigi antud juhul väga palju CRM-ga tegu ei ole, ainult pannakse kirja võitja nime ja projekti sulgemisel raamatupidaja saab teavet, et saab arvet välja kirjutada.
+</p>
+<p>
+Marketing & Sales – lepingus on kirjas töötaja otsinguks mõeldud meedia kanalid ja eelarve. CRM-s on kirjas mis meedia väljaannetes (nii paber, kui ka internet) ja mis ajal on üleval konkursside kuulutused.
+</p>
+<p>
+Service – garantiiaeg. CRM-s on kirjas projektisulgemise kuupäev. Sellest kuupäevast hakkab kehtima garantii aeg, mille ulatus ja pikkus on sätestatud lepingus. Kui väljavalitu kandidaat ei sobi ja läheb lühikese aja jooksul ära, siis kas võetakse teist inimest samast finaalist või korraldatakse uus konkurss/otsing.
+</p>
+
+<h3>Support activities</h3>
+
+<p>
+Infrastructure – selles organisatsioonis need tegevused ei ole kajastatud CRM-s.
+</p>
+<p>
+Technological development – kuna CRM hostitatakse ettevõte siseselt, siis siia võiks arvestada riistvara ja tarkvara mille peal see CRM töötab.
+</p>
+<p>
+Human Resource Management – CRM-s on kirjas ka kõikide oma töötajate ankeedid, testide tulemused, läbitud koolitused.
+</p>
+<p>
+Procurement – CRM-s see väga kajastatud ei ole. Ainult, et seal hoitakse kandidaatide testide tulemused, mis on teenusena sisse ostetud testimiskeskkonnast.
+</p>
+
+
+<h3>Tegevused, mis loovad väärtust kliendi jaoks:</h3>
+
+<ol>
+	<li>Tellimuse vastuvõtmine.</li>
+	<li>Pakkumuse koostamine.</li>
+	<li>Lepingu ettevalmistamine.</li>
+	<li>Kliendi nõustamine otsitava kandidaati suhtes.</li>
+	<li>Kandidaatide leidmine.</li>
+	<li>Kliendi kursis hoidmine konkurssi kulgemisest.</li>
+	<li>Nõustamine parima kandidaadi valimiseks.</li>
+	<li>Garantiiteenus.</li>
+	<li>Kaudsel kliendi jaoks loob väärtus vaadeldava organisatsiooni töötajate pädevus, ehk töötajaid tuleb pidevalt koolitada.</li>
+</ol>
+
+<h3>Väärtust loovad faktorid:</h3>
+
+<ol>
+	<li>Kiire tellimuse vastuvõtmine.</li>
+	<li>Kiire pakkumise tegemine.</li>
+	<li>Võimalikult põhjalikult uurida ettevõte tausta ja tegevust, et aru saada keda tegelikult otsitakse.</li>
+	<li>Konkurssi avalikustamine võimalikult suurele siht auditooriumile, tagades heade kandidaatide osalemist konkursil.</li>
+	<li>Tuginedes kogemusele ja tuues näiteid analoogsetest konkurssidest nõustada kliendi parima kandidaati valimiseks.</li>
+	<li>Pidada konkurssi tähtaegadest.</li>
+</ol>
+
+<h2>SWOT analüüs</h2>
+
+<table>
+<tr>
+	<td>
+		Strength – Tugevus
+		<ol>
+			<li>Üle 20 aastane kogemus.</li>
+			<li>Palju tutvusi (palju inimesi on leidnud tööd, ajaga nad on teinud karjääri ja nüüd pöörduvad tagasi kliendina).</li>
+			<li>Pikaajalised kliendid.</li>
+			<li>Väike organisatsioon on paindlikum.</li>
+		</ol>
+	</td>
+	<td>
+		Weakness - Nõrkus
+		<ol>
+			<li>Väike ettevõttena ei ole nii palju ressurssi.</li>
+			<li>Vanematel inimestel võib olla raskusi kaasaegse tehnoloogiaga sammu hoida.</li>
+			<li>Vananenud CRM ei anna enam eelist, nagu see oli alguaegadel.</li>
+		</ol>
+	</td>
+</tr>
+<tr>
+	<td>
+		Opportunities - Võimalused
+		<ol>
+			<li>Planeerides uut CRM-i on võimalik seda kujundada oma nõuete järgi.</li>
+			<li>Väike organisatsioonina võib endale lubada proovida uusi asju, kiiresti, ilma bürokraatiata.</li>
+		</ol>
+	</td>
+	<td>
+		Threats – Ohud
+		<ol>
+			<li>Tihenenud konkurents personaliotsingu turul.</li>
+			<li>Aina rohkem on otsitavateks konkreetsed spetsialistid, keda Eesti turul kas ei ole üldse või saab ainult üle osta suure raha eest. Kandidaatide otsingud on raskendatud.</li>
+		</ol>
+	</td>
+</tr>
+
+</table>
+ 
+ <p>
+CRM puhul on kasutusel andmekeskne lähenemisviis, kuna peamised on klientide ja kandidaatide andmed, mitte see mis nendega tehakse. Andmed ei muutu nii tihti ja nende loogika on projekteeritud konkreetse ettevõte ja konkreetsete protsesside jaoks.
+CRM on  pigem Decision Support System (DSS). Tänu erinevatele filtritele saab välja filtreerida kandidaate, kelle omadused kõige paremini sobivad antud otsingule, otsus põhineb nii kandidaatide enda poolt avaldatud infole kui ka testide tulemustele.
+</p>
+
+<h2>Uue CRM-i omadused</h2>
+
+Tuginedes Porteri Väärtusahela ja SWOT analüüsidele saab järeldada uue CRM-i omadusi:
+
+<ol>
+	<li>Tellimusi saab võta vastu e-posti või veebilehe kaudu, kust edasi nad automaatselt liiguksid CRM-i ja seal tuleks automaatne teavitus vastutavale inimesele, kes võtab kliendiga ühendust.</li>
+	<li>CRM pakub analoogseid toimunud konkursse, et nende abil saaks kiiremini koostada pakkumise.</li>
+	<li>Kui CRM-s kliendiettevõtet veel ei ole, siis koostada võimalikult põhjalik kirjeldus ettevõttest. Kui ettevõte on juba CRM-s kliendina olemas, siis uurida mis on muutunud. Selle taustainfo abil saab kliendi nõustada.</li>
+	<li>Sisseehitada CRM-i levinumate sotsvõrkudesse kuulutuse lisamise, muutmise ja kustutamise funktsionaalsus.</li>
+	<li>CRM peaks pakkuma analoogseid konkursse ja võimalusel ka kommnetaare, mis sellest edasi sai, kas väljavalitu kandidaat osutus heaks valikuks või mitte (ja miks).</li>
+	<li>CRM peaks pakkuma nii deadline-e kui ka redline-e, tagades, et kõik saab tehtud õigeaegselt.</li>
+	<li>CRM peaks võimalikult palju automatiseerima standardseid tegevusi, et inimestel jääks rohkem aega tegeleda „loomingulisema“ tööga.</li>
+	<li>CRM-i kasutus peab olema lihtne.</li>
+	<li>CRM-i täiendus peab olema lihtne.</li>
+</ol>
+
+
+</div>
+</body>
+
+</html>
