@@ -20,7 +20,7 @@
 	</ol>
 
 	Ettevõte võib jämedalt jagada kaheks osaks: administratiiv töötajad ja konsultandid.
-	Konsultandid:
+	<p>Konsultandid:</p>
 	<ol>
 		<li>Kohtuvad klientidega, selgitamas nende vajadused</li>
 		<li>Valivad potentsiaalseid kandidaate, kohtuvad nendega</li>
@@ -28,7 +28,7 @@
 		<li>Korraldavad koolitusi</li>
 	</ol>
 
-	Administratiiv töötajad:
+	<p>Administratiiv töötajad:</p>
 	<ol>
 		<li>Koostavad pakkumisi</li>
 		<li>Koostavad töökuulutusi</li>
@@ -49,41 +49,38 @@
 	<h2>Porteri mudel</h2>
 	Alljärgnevalt seon Porteri Väärtusahela mudelit ettevõttes kasutatava CRM-ga.
 
-	<p>
-		<img src="pics/porter.png" alt="Porter Value Chain">
-	</p>
+	<p><img src="pics/porter.png" alt="Porter Value Chain"></p>
 
 	<h3>Primary Activities</h3>
-	<p>
-	Inbounnd Logistic – Antud juhul see võiks olla sissetulevad tellimused ja kandidaadid kes kandideerivad mingil konkursile. CRM-s on kõik käimas olevad ja potentsiaalsed projektid. Sammuti CRM-s on kandidaatide andmebaas, see on seotud veebilehega, niimoodi et veebilehel täidetud ankeet/CV sattub CRM.
-	</p>
-	<p>
-	Operations – kandideerivatest inimhulgast sobilike kandidaatide välja valimine, testimine, intervjueerimine, kliendi nõustamine otsitava kandidaati suhtes. CRM-s saab vaadata kandideeritavate inimeste CV ja teha esmase valiku. Seejärgi võib kokku leppida testimiseks, testi tulemused on salvestatud CRM-s. CRM-s saab paika panna intervjuude ajakava, niimoodi, et kandidaadid ei näeks üks teist ja oleks ka üldine ülevaade sellest, kui palju ja millal tuleb vestluseks.
-	</p>
-	<p>
-	Outbound Logistics – see võiks olla finaal, ehk lõpliku kandidaadi valimine. Kuigi antud juhul väga palju CRM-ga tegu ei ole, ainult pannakse kirja võitja nime ja projekti sulgemisel raamatupidaja saab teavet, et saab arvet välja kirjutada.
-	</p>
-	<p>
-	Marketing & Sales – lepingus on kirjas töötaja otsinguks mõeldud meedia kanalid ja eelarve. CRM-s on kirjas mis meedia väljaannetes (nii paber, kui ka internet) ja mis ajal on üleval konkursside kuulutused.
-	</p>
-	<p>
-	Service – garantiiaeg. CRM-s on kirjas projektisulgemise kuupäev. Sellest kuupäevast hakkab kehtima garantii aeg, mille ulatus ja pikkus on sätestatud lepingus. Kui väljavalitu kandidaat ei sobi ja läheb lühikese aja jooksul ära, siis kas võetakse teist inimest samast finaalist või korraldatakse uus konkurss/otsing.
-	</p>
+	
+	<p>Inbounnd Logistic – Antud juhul see võiks olla sissetulevad tellimused ja kandidaadid kes kandideerivad mingil konkursile. 
+	CRM-s on kõik käimas olevad ja potentsiaalsed projektid. Sammuti CRM-s on kandidaatide andmebaas, see on seotud veebilehega, 
+	niimoodi et veebilehel täidetud ankeet/CV sattub CRM.	</p>
+	
+	<p>Operations – kandideerivatest inimhulgast sobilike kandidaatide välja valimine, testimine, intervjueerimine, kliendi nõustamine 
+	otsitava kandidaati suhtes. CRM-s saab vaadata kandideeritavate inimeste CV ja teha esmase valiku. Seejärgi võib kokku leppida testimiseks, 
+	testi tulemused on salvestatud CRM-s. CRM-s saab paika panna intervjuude ajakava, niimoodi, et kandidaadid ei näeks üks teist ja oleks ka 
+	üldine ülevaade sellest, kui palju ja millal tuleb vestluseks.</p>
+	
+	<p>Outbound Logistics – see võiks olla finaal, ehk lõpliku kandidaadi valimine. Kuigi antud juhul väga palju CRM-ga tegu ei ole, ainult 
+	pannakse kirja võitja nime ja projekti sulgemisel raamatupidaja saab teavet, et saab arvet välja kirjutada.</p>
+	
+	<p>Marketing & Sales – lepingus on kirjas töötaja otsinguks mõeldud meedia kanalid ja eelarve. CRM-s on kirjas mis meedia väljaannetes 
+	(nii paber, kui ka internet) ja mis ajal on üleval konkursside kuulutused.</p>
+	
+	<p>Service – garantiiaeg. CRM-s on kirjas projektisulgemise kuupäev. Sellest kuupäevast hakkab kehtima garantii aeg, mille ulatus ja 
+	pikkus on sätestatud lepingus. Kui väljavalitu kandidaat ei sobi ja läheb lühikese aja jooksul ära, siis kas võetakse teist inimest samast 
+	finaalist või korraldatakse uus konkurss/otsing.</p>
 
 	<h3>Support activities</h3>
 
-	<p>
-	Infrastructure – selles organisatsioonis need tegevused ei ole kajastatud CRM-s.
-	</p>
-	<p>
-	Technological development – kuna CRM hostitatakse ettevõte siseselt, siis siia võiks arvestada riistvara ja tarkvara mille peal see CRM töötab.
-	</p>
-	<p>
-	Human Resource Management – CRM-s on kirjas ka kõikide oma töötajate ankeedid, testide tulemused, läbitud koolitused.
-	</p>
-	<p>
-	Procurement – CRM-s see väga kajastatud ei ole. Ainult, et seal hoitakse kandidaatide testide tulemused, mis on teenusena sisse ostetud testimiskeskkonnast.
-	</p>
+	<p>Infrastructure – selles organisatsioonis need tegevused ei ole kajastatud CRM-s.</p>
+	
+	<p>Technological development – kuna CRM hostitatakse ettevõte siseselt, siis siia võiks arvestada riistvara ja tarkvara mille peal see CRM töötab.</p>
+	
+	<p>Human Resource Management – CRM-s on kirjas ka kõikide oma töötajate ankeedid, testide tulemused, läbitud koolitused.</p>
+	
+	<p>Procurement – CRM-s see väga kajastatud ei ole. Ainult, et seal hoitakse kandidaatide testide tulemused, mis on teenusena sisse ostetud testimiskeskkonnast.</p>
 
 
 	<h3>Tegevused, mis loovad väärtust kliendi jaoks:</h3>
@@ -155,10 +152,10 @@
 
 	</table>
 	 
-	 <p>
-	CRM puhul on kasutusel andmekeskne lähenemisviis, kuna peamised on klientide ja kandidaatide andmed, mitte see mis nendega tehakse. Andmed ei muutu nii tihti ja nende loogika on projekteeritud konkreetse ettevõte ja konkreetsete protsesside jaoks.
-	CRM on  pigem Decision Support System (DSS). Tänu erinevatele filtritele saab välja filtreerida kandidaate, kelle omadused kõige paremini sobivad antud otsingule, otsus põhineb nii kandidaatide enda poolt avaldatud infole kui ka testide tulemustele.
-	</p>
+	 <p>CRM puhul on kasutusel andmekeskne lähenemisviis, kuna peamised on klientide ja kandidaatide andmed, mitte see mis nendega tehakse. Andmed 
+	 ei muutu nii tihti ja nende loogika on projekteeritud konkreetse ettevõte ja konkreetsete protsesside jaoks. 	CRM on  pigem Decision Support 
+	 System (DSS). Tänu erinevatele filtritele saab välja filtreerida kandidaate, kelle omadused kõige paremini sobivad antud otsingule, otsus põhineb 
+	 nii kandidaatide enda poolt avaldatud infole kui ka testide tulemustele.</p>
 
 	<h2>Uue CRM-i omadused</h2>
 
