@@ -112,16 +112,16 @@
 
 	<table>
 	<tr>
-		<td>
-			Strength – Tugevus
+		<td id="porter">
+			<strong>Strength – Tugevus</strong>
 			<ol>
 				<li>Pikaajaline CRM-i kasutuskogemus, on teadlikus mida on töös vaja ja mida mitte.</li>
 				<li>Omanike kindel soov arendada uut CRM-i.</li>
 				<li>Infrastruktuur (serverid, arvutid, opsüsteemid) on olemas.</li>
 			</ol>
 		</td>
-		<td>
-			Weakness - Nõrkus
+		<td id="porter">
+			<strong>Weakness - Nõrkus</strong>
 			<ol>
 				<li>Praegune CRM on vananenud.</li>
 				<li>Töötajate IT oskused jäävad ajale jalgu.</li>
@@ -131,16 +131,16 @@
 		</td>
 	</tr>
 	<tr>
-		<td>
-			Opportunities - Võimalused
+		<td id="porter">
+			<strong>Opportunities - Võimalused</strong>
 			<ol>
 				<li>Kuna arendatakse uut CRM-i, siis on võimalik algusest peale implementeerida kõik vajalikud kaasaegsed võimalused (kiiread andmebaasi mootorid, nutiseadmete tugi jne).</li>
 				<li>Kasutada kogemusi ja teadmisi, et arendada konkurentsivõimeline toode.</li>
 				<li>Luua uus kasutajasõbrlik CRM, mis ei vaja kasutajatelt erilisi arvutioskusi.</li>
 			</ol>
 		</td>
-		<td>
-			Threats – Ohud
+		<td id="porter">
+			<strong>Threats – Ohud</strong>
 			<ol>
 				<li>Pidevalt arenev ja muutuv turg võib kiiresti minimeerida uue CRM eelised, võrreldes konkurentidega.</li>
 				<li>Võib tulemuseks saada mitte seda, mida on vaja.</li>

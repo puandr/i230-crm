@@ -101,31 +101,31 @@
 			<th>Kriteerium</th>
 		</tr>
 		<tr>
-			<td>Isik</td>
+			<td id="superclass">Isik</td>
 			<td>Abstract superklass</td>
 		</tr>
 		<tr>
-			<td>Kandidaat</td>
+			<td id="childclass">Kandidaat</td>
 			<td>Isik childclass</td>
 		</tr>
 		<tr>
-			<td>Konsultant</td>
+			<td id="childclass">Konsultant</td>
 			<td>Isik childclass</td>
 		</tr>
 		<tr>
-			<td>Administratiivtöötaja</td>
+			<td id="childclass">Administratiivtöötaja</td>
 			<td>Isik childclass</td>
 		</tr>
 		<tr>
-			<td>Sündmus</td>
+			<td id="superclass">Sündmus</td>
 			<td>Abstract superclass</td>
 		</tr>
 		<tr>
-			<td>Test</td>
+			<td id="childclass">Test</td>
 			<td>Sündmus childclass</td>
 		</tr>
 		<tr>
-			<td>Kohtumine</td>
+			<td id="childclass">Kohtumine</td>
 			<td>Sündmus childclass</td>
 		</tr>
 		<tr>
@@ -141,18 +141,4 @@
 	<h3>Lisaiteratsiooni vajadus</h3>
 	<p>Kuna projekti arendav meeskond on üsna väike, siis lisaiteratsiooni jaoks ei ole piisavalt ajalist resurssi.</p>
 
-	<table>
-		<tr>
-			<th></th>
-			<th></th>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-	</table>
 </div>
