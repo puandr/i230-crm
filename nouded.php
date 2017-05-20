@@ -9,8 +9,8 @@
 	<ol>
 		<li>Millal süsteem peab valmis olema? Selgitus: et hinnata ajalised ja ressursilised mahud.<strong> MF</strong></li>
 		<li>Kui suur on projekti eelarve? Selgitus: et hinnata projekti teostatavust ja ressursside piisavust.<strong> MF</strong></li>
-		<li>Mis info hakkab süsteemis olema? Selgitus: et desainida vastavad andmestruktuurid ja valida sobivad lahendused.<strong> F</strong></li>
-		<li>Mis toiminguid hakatakse süsteemis tegema? Selgitus: et desainida vastav funktsionaalsus.<strong> F</strong></li>
+		<li>Mis info hakkab süsteemis olema? Selgitus: et disainida vastavad andmestruktuurid ja valida sobivad lahendused.<strong> F</strong></li>
+		<li>Mis toiminguid hakatakse süsteemis tegema? Selgitus: et disainida vastav funktsionaalsus.<strong> F</strong></li>
 		<li>Kes hakkab kasutama süsteemi? Selgitus: et aru saada, kes on lõppkasutajad ja vastavalt projekteerida kasutajaliides.<strong> MF</strong></li>
 		<li>Mis keeles hakatakse süsteemi kasutama? Selgitus: et teostada kasutajaliides vajalikus keeles.<strong> MF</strong></li>
 		<li>Kas süsteemi on vaja siduda/liidestada teiste süsteemidega? Selgitus: et aru saada info liikumisest süsteemi väliselt.<strong> F</strong></li>
@@ -21,7 +21,7 @@
 		<li>Kas süsteem peab olema hästi skaleeruv? Selgitus: et valida sobilik lahendus.<strong> MF</strong></li>
 		<li>Kui pikkalt peab salvestama andmeid? Selgitus: et selgitada mahulisi piirangud.<strong> MF</strong></li>
 		<li>Kas peale süsteemi üleandmist on vajadus meiepoolsele toele? Selgitus: et varuda piisavalt inimressurssi peale süsteemi üleandmist.<strong> MF</strong></li>
-		<li>Mida peab leidma otsinguga? Selgitus: otsingumootori projekteerimise jaoks, kas otsida ainult nimede/kontaktide/ametide järgi või, näiteks, filtreerida ka konkreetsete testitulemuste järgi.<strong> F</strong></li>
+		<li>Mida peab leidma otsinguga? Selgitus: otsingumootori projekteerimise jaoks, kas otsida ainult nimede/kontaktide/ametite järgi või, näiteks, filtreerida ka konkreetsete testitulemuste järgi.<strong> F</strong></li>
 		<li>Mis on süsteemi kasutajate rollid? Selgitus, kas tuleb ainult administraator ja kõik muud või tulevad erinevad rollid kus igal rollil oma õigused. <strong> F</strong></li>
 		<li>Mis õigused on süsteemi kasutajate rollidel? Selgitus: et realiseerida vastavad juurdepääsuõigused.<strong> F</strong></li>
 		<li>Kes on tellija esindajad ja mis õigused neil on? Selgitus: et saada aru kellega mis küsimusi arutleda ja kes on lõplik otsustaja nendes küsimustes. <strong> MF</strong></li>
@@ -41,7 +41,7 @@
 		<li>Konsultandina soovin koostada sobilike kandidaatide nimekirja, et administratiivtöötaja teaks kellega intervjuu aegu leppida.</li>
 		<li>Konsultandina soovin näha kalendris minu poolt läbiviidavad intervjuud, et valmistada ette ja planeerida oma aega.</li>
 		<li>Konsultandina soovin sulgeda konkurssi, et vastav teade oleks edastatud raamatupidajale kes koostab arvet.</li>
-		<li>Konsultandina soovin otsida klient-ettevõteid, et vaadata nende infot. </li>
+		<li>Konsultandina soovin otsida klient-ettevõtteid, et vaadata nende infot. </li>
 		<li>Konsultandina soovin koostada töökuulutusi ning määrama kus ja kui kauaks nad peavad olema esitatud.</li>
 		<li>Administratiivtöötajana soovin lisada kandidaatide ankeete, kes soovisid kandideerida e-posti teel (või muul viisil).</li>
 		<li>Administratiivtöötajana soovin näha sobilike kandidaatide kontkatandmed, et leppida nendega aega intervjuuks.</li>

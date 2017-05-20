@@ -59,12 +59,12 @@
 
 	<h3>Primary Activities</h3>
 	
-	<p><strong>Üldiselt </strong></p>
+	<p><h4>Üldiselt </h4></p>
 	
 	<p>Põhitegevuste alla kuuluvad andmete kogumine, nende säilitamine ning nende kasutamine erinevate päringutele vastuse saamiseks.
 	See eeldab andmete head organiseerimist ning nendele mugavat ligipääsu.</p>
 	
-	<p><strong>Täpsemalt </strong></p>
+	<p><h4>Täpsemalt </h4></p>
 	
 	<p>Inbounnd Logistic – Antud juhul see võiks olla sissetulevad tellimused ja kandidaadid kes kandideerivad mingil konkursile. 
 	CRM-s on kõik käimas olevad ja potentsiaalsed projektid. Sammuti CRM-s on kandidaatide andmebaas, see on seotud veebilehega, 
@@ -87,11 +87,11 @@
 
 	<h3>Support activities</h3>
 	
-	<p><strong>Üldiselt</strong></p>
+	<p><h4>Üldiselt</h4></p>
 	
 	<p>Toetavate tegevuste alla kuuluvad vajalike tehnoloogiate soetamine ja üleval hoidmine, töötajate koolitamine nende kasutamiseks.</p>
 
-	<p><strong>Täpsemalt </strong></p>
+	<p><h4>Täpsemalt </h4></p>
 	
 	<p>Infrastructure – selles organisatsioonis need tegevused ei ole kajastatud CRM-s.</p>
 	
@@ -127,14 +127,14 @@
 		<li>Pidada konkurssi tähtaegadest.</li>
 	</ol>
 	
-	<p>Organisatsioon keskendub kliendi rahuolule, et saaks leitud kõige parem kandidaat. Ning uus CRM peab aitam organisatsioone selle eesmärgi saavutamises.</p>
+	<p>Organisatsioon keskendub kliendi rahuolule, et saaks leitud kõige parem kandidaat. Ning uus CRM peab aitama organisatsioone selle eesmärgi saavutamises.</p>
 
 	<h2>IT SWOT analüüs</h2>
 
 	<table>
 	<tr>
 		<td id="porter">
-			<p><strong>Strength – Tugevus</strong></p>
+			<p><h4>Strength – Tugevus</h4></p>
 			<ol>
 				<li>Pikaajaline CRM-i kasutuskogemus, on teadlikus mida on töös vaja ja mida mitte.</li>
 				<li>Omanike kindel soov arendada uut CRM-i.</li>
@@ -142,7 +142,7 @@
 			</ol>
 		</td>
 		<td id="porter">
-			<p><strong>Weakness - Nõrkus</strong></p>
+			<p><h4>Weakness - Nõrkus</h4></p>
 			<ol>
 				<li>Praegune CRM on vananenud.</li>
 				<li>Töötajate IT oskused jäävad ajale jalgu.</li>
@@ -153,15 +153,15 @@
 	</tr>
 	<tr>
 		<td id="porter">
-			<p><strong>Opportunities - Võimalused</strong></p>
+			<p><h4>Opportunities - Võimalused</h4></p>
 			<ol>
 				<li>Kuna arendatakse uut CRM-i, siis on võimalik algusest peale implementeerida kõik vajalikud kaasaegsed võimalused (kiiread andmebaasi mootorid, nutiseadmete tugi jne).</li>
 				<li>Kasutada kogemusi ja teadmisi, et arendada konkurentsivõimeline toode.</li>
-				<li>Luua uus kasutajasõbrlik CRM, mis ei vaja kasutajatelt erilisi arvutioskusi.</li>
+				<li>Luua uus kasutajasõbralik CRM, mis ei vaja kasutajatelt erilisi arvutioskusi.</li>
 			</ol>
 		</td>
 		<td id="porter">
-			<p><strong>Threats – Ohud</strong></p>
+			<p><h4>Threats – Ohud</h4></p>
 			<ol>
 				<li>Pidevalt arenev ja muutuv turg võib kiiresti minimeerida uue CRM eelised, võrreldes konkurentidega.</li>
 				<li>Võib tulemuseks saada mitte seda, mida on vaja.</li>

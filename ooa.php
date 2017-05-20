@@ -25,13 +25,13 @@
 		<tr>
 			<td>Kandidaat</td>
 			<td>Kandidaadi identifikaator</td>
-			<td>Konkurssil kandideerimine<br>Sündmusele registreerimine</td>
+			<td>Konkursil kandideerimine<br>Sündmusele registreerimine</td>
 			<td>Kandideeriv <br>Mitte sobilik<br>Osaleb sündmuses</td>
 		</tr>
 		<tr>
 			<td>Konsultant</td>
 			<td>Konsultandi identifikaator</td>
-			<td>Kandidaatide valimine<br>Sündmusele reistreerimine</td>
+			<td>Kandidaatide valimine<br>Sündmusele registreerimine</td>
 			<td>Juhib konkurssi<br>Osaleb sündmuses</td>
 		</tr>
 		<tr>
@@ -54,7 +54,7 @@
 		</tr>
 		<tr>
 			<td>Kandidaat</td>
-			<td>Osaleb konkurssil <br>Teeb testi<br>Osaleb intervjuus</td>
+			<td>Osaleb konkursil <br>Teeb testi<br>Osaleb intervjuus</td>
 		</tr>
 		<tr>
 			<td>Konsultant</td>
@@ -77,19 +77,19 @@
 
 	<h3>Stsenaariumid</h3>
 	<p><strong>1. Konsultandina soovin avada uue konkurssi</strong></p>
-	<p>Kui leping on allkirjastatud, konsulatant logib CRM-i sisse ning avab uue konkurssi, pannes kirja selle kirjeldus, tööandja ootused ja pakkumised, kestvuse,
+	<p>Kui leping on allkirjastatud, konsultant logib CRM-i sisse ning avab uue konkurssi, pannes kirja selle kirjeldus, tööandja ootused ja pakkumised, kestvuse,
 	eelarve, meediakanalid reklaami jaoks.</p>
 	<p><strong>2. Konsultandina soovin määrata kandidaatidele testi</strong></p>
 	<p>Konsultant logib CRM-i, vaatab läbi konkurssi kandideerijate nimekirja, valib sobiva hulga paremaid kandidaate ja määrab neile vajalikud testid. Seejuures, 
 	kui kandidaat on hiljuti juba teinud testi, siis ta ei pea seda enam tegema, ning talle ei määrata testi. Administratiivtöötaja lepib kandidaadiga ajas, millal
 	ta saab tulla testi tegema.</p>
 	<p><strong>3. Konsultandina soovin määrata kandidaadile intervjuud</strong></p>
-	<p>Konsultant logib CRM-i ning vaatab kandidaatide testide tulemusi, valib paremaid ning avaldab soovi nendega kohtuda, pakkudes talle sobilikud ajaj ja kohad.
-	Seejärel administratiivtöötaja lepib kandidaatidega kokku kohtumise aja ja koha, niimoodi, et see sboiks nii konsultandile, kui ka kandidaadile.</p>
+	<p>Konsultant logib CRM-i ning vaatab kandidaatide testide tulemusi, valib paremaid ning avaldab soovi nendega kohtuda, pakkudes talle sobilikud ajad ja kohad.
+	Seejärel administratiivtöötaja lepib kandidaatidega kokku kohtumise aja ja koha, niimoodi, et see sobiks nii konsultandile, kui ka kandidaadile.</p>
 	<p><strong>4. Kandidaadina soovin teha testi</strong></p>
 	<p>Kandidaat saab teate, et edasiseks kandideerimiseks ta peab sooritama teste. Administratiivtöötajaga lepib ta ajas, millal ta saab tulla testi teha. Kandidaat
 	õigeaegselt ilmub kohale ja teeb testi, mille järele jääb ootama testi tulemusi ning teate, kas ta osutub valituks järgmiseks konkurssi etapiks või mitte. Testide 
-	staatus, sooritamisaeg ja tulemused läevad CRM-i kirja.</p>
+	staatus, sooritamisaeg ja tulemused lähevad CRM-i kirja.</p>
 	<p><strong>5. Kandidaadina soovin võta osa intervjuus</strong></p>
 	<p>Kandidaat saab teate, et konsultant soovib temaga kohtuda. Administratiivtöötajaga lepivad nad ajas ja kohas, mis sobiks nii kandidaadile, kui ka konsultandile.
 	Intervjuu aeg, koht ja staatus lähevad CRM-i kirja.</p>
@@ -139,6 +139,6 @@
 	<p><img src="pics/class-diagram.png" alt="Class Diagram"></p>
 
 	<h3>Lisaiteratsiooni vajadus</h3>
-	<p>Kuna projekti arendav meeskond on üsna väike, siis lisaiteratsiooni jaoks ei ole piisavalt ajalist resurssi.</p>
+	<p>Kuna projekti arendav meeskond on üsna väike, siis lisaiteratsiooni jaoks ei ole piisavalt ajalist ressurssi.</p>
 
 </div>
