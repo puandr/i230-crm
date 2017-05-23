@@ -50,15 +50,15 @@
 		</tr>
 		<tr>
 			<td>Klient</td>
-			<td>Tellib konkurssi</td>
+			<td>Tellib konkurssi<br>Valib kandidaadi</td>
 		</tr>
 		<tr>
 			<td>Kandidaat</td>
-			<td>Osaleb konkursil <br>Teeb testi<br>Osaleb intervjuus</td>
+			<td>Osaleb konkursil<br>Osaleb testis<br>Osaleb intervjuus</td>
 		</tr>
 		<tr>
 			<td>Konsultant</td>
-			<td>Korraldab konkurssi <br>Osaleb intervjuus<br>Valib kandidaate</td>
+			<td>Korraldab konkurssi<br>Valib kandidaate<br>Määrab teste<br>Osaleb intervjuus</td>
 		</tr>
 		<tr>
 			<td>Administratiiv töötaja</td>
