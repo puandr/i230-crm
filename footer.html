@@ -1,2 +1,16 @@
+<script type="text/javascript">
+	$(document).ready(function() {
+		var $currentLocation = window.location.search;
+				
+		$("div a").each(function() {
+			var $href = $(this).attr("href");			
+			if ($currentLocation == $href) {			
+				$(this).parent().removeClass("menuItemInactive").addClass("menuItemActive");
+			} else {
+				$(this).parent().removeClass("menuItemActive").addClass("menuItemInactive");
+			}
+		});
+	});
+</script>
 </body>
 </html>

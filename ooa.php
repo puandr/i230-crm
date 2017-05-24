@@ -101,31 +101,31 @@
 			<th>Kriteerium</th>
 		</tr>
 		<tr>
-			<td id="superclass">Isik</td>
+			<td class="superclass">Isik</td>
 			<td>Abstract superklass</td>
 		</tr>
 		<tr>
-			<td id="childclass">Kandidaat</td>
+			<td class="childclass">Kandidaat</td>
 			<td>Isik childclass</td>
 		</tr>
 		<tr>
-			<td id="childclass">Konsultant</td>
+			<td class="childclass">Konsultant</td>
 			<td>Isik childclass</td>
 		</tr>
 		<tr>
-			<td id="childclass">Administratiivtöötaja</td>
+			<td class="childclass">Administratiivtöötaja</td>
 			<td>Isik childclass</td>
 		</tr>
 		<tr>
-			<td id="superclass">Sündmus</td>
+			<td class="superclass">Sündmus</td>
 			<td>Abstract superclass</td>
 		</tr>
 		<tr>
-			<td id="childclass">Test</td>
+			<td class="childclass">Test</td>
 			<td>Sündmus childclass</td>
 		</tr>
 		<tr>
-			<td id="childclass">Kohtumine</td>
+			<td class="childclass">Kohtumine</td>
 			<td>Sündmus childclass</td>
 		</tr>
 		<tr>
