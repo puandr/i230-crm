@@ -13,6 +13,7 @@ if (isset( $_GET["page"] )) {
 		case "erd" : include("erd.php"); break;
 		case "ooa" : include("ooa.php"); break;
 		case "i244" : include("i244.php"); break;
+		case "lisakomm" : include("lisakomm.php"); break;
 	}
 } else {
 	include("avaleht.php");
