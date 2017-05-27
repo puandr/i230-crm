@@ -2,14 +2,17 @@
 	
 	<h2>i244 retsenseerijatele</h2>
 	
-	<h3>Projekti kirjeldus i244 kohalt</h3>
+	<h3>Projekti kirjeldus i244 kohalt</h3>	
 	
-	
-	
-	<?php 
+	<?php
+		
 		if (isset($_SESSION['kasutajanimi'])) {			
 			if ($_SESSION['kasutajanimi'] == 'admin') {			
 				echo '
+				<h2>Väljalogimine</h2>
+				<form id="logoutform" action="?page=logout" method="POST" >
+					<input type="submit" value="Logi välja"/>
+				</form>
 				<h2>Kommentaaride lisamine</h2>
 				<form id="form1" name="gb_form" method="post" action="?page=lisakomm">
 					<p>Nimi:</p>
@@ -21,12 +24,22 @@
 				';
 			}
 		} else {
+			echo '<h2>Sisselogimine</h2>';
+			if (isset($_SESSION['viga'])) {
+				echo '<p class="viga">' . $_SESSION['viga'] .'</p>';
+				$_SESSION['viga'] = '';
+			}
+			if (isset($_SESSION['puudu'])) {
+				echo '<p class="viga">' . $_SESSION['puudu'] . '</p>';
+				$_SESSION['puudu'] = '';
+			}
 			echo '
-				<h2>Sisselogimine</h2>
 				<form id="loginform" action="?page=login" method="POST" >
-					<input type="text" name="kasutajanimi" placeholder="kasutajanimi"/><br/>
-					<input type="password" name="parool" placeholder="parool"/><br/>
-					<input type="submit" value="Logi sisse!"/>
+					<p>Teie kasutajanimi:</p>
+					<p><input type="text" name="kasutajanimi" placeholder="kasutajanimi"/></p>
+					<p>Teie parool:</p>
+					<p><input type="password" name="parool" placeholder="parool"/></p>
+					<p><input type="submit" value="Logi sisse"/></p>
 				</form>
 			';
 		}
@@ -47,11 +60,9 @@
 		$user = "test";
 		$pass = "t3st3r123";
 		$db = "test";
-		$connection = mysqli_connect($host, $user, $pass, $db) or die("ei saa ühendust mootoriga- ".mysqli_error());
+		$connection = mysqli_connect($host, $user, $pass, $db) or die("Ei saa ühendust mootoriga- ".mysqli_error());
 		
 		mysqli_query($connection, "SET CHARACTER SET UTF8") or die("Ei saanud baasi utf-8-sse - ".mysqli_error($connection));
-
-		mysqli_connect("$host", "$user", "$pass")or die("Ei saanud ühendust serveriga"); 
 		
 		$sql="SELECT * FROM 10162828_i244_guestbook ORDER BY lisamise_aeg DESC";
 		$result = mysqli_query($connection, $sql);
@@ -68,16 +79,16 @@
 		while($rows = mysqli_fetch_array($result)) {
 	?>	
 		<tr>			
-			<td width = 35%><?php echo $rows['nimi']; ?></td>
-			<td><?php echo $rows['kommentaar']; ?></td>
-			<td width = 10%><?php echo $rows['lisamise_aeg']; ?></td>			
+			<td width = 35%><?php echo htmlspecialchars($rows['nimi']); ?></td>
+			<td><?php echo htmlspecialchars($rows['kommentaar']); ?></td>
+			<td width = 10%><?php echo htmlspecialchars($rows['lisamise_aeg']); ?></td>			
 		</tr>		
 	<?php
 		}
 	?>
 	
 	</table>
-			
+	
 	
 </div>
 

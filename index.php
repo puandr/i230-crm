@@ -3,6 +3,13 @@ require_once('header.html');
 
 session_start();
 
+function data_validation($data) {
+	  $data = trim($data);
+	  $data = stripslashes($data);
+	  $data = htmlspecialchars($data);
+	  return $data;
+	}
+
 $kuhuvaja = "avaleht";
 if (isset( $_GET["page"] )) {
 	$kuhuvaja = htmlspecialchars($_GET["page"]);
@@ -17,6 +24,7 @@ if (isset( $_GET["page"] )) {
 		case "i244" : include("i244.php"); break;
 		case "lisakomm" : include("lisakomm.php"); break;
 		case "login" : include("login.php"); break;
+		case "logout" : include("logout.php"); break;
 	}
 } else {
 	include("avaleht.php");
