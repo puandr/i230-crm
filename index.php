@@ -1,9 +1,11 @@
-<?php require_once('header.html')?>
-
 <?php 
+require_once('header.html');
 
+session_start();
+
+$kuhuvaja = "avaleht";
 if (isset( $_GET["page"] )) {
-	$kuhuvaja = $_GET["page"];
+	$kuhuvaja = htmlspecialchars($_GET["page"]);
 
 	switch($kuhuvaja) {
 		case "avaleht" : include("avaleht.php"); break;
@@ -14,6 +16,7 @@ if (isset( $_GET["page"] )) {
 		case "ooa" : include("ooa.php"); break;
 		case "i244" : include("i244.php"); break;
 		case "lisakomm" : include("lisakomm.php"); break;
+		case "login" : include("login.php"); break;
 	}
 } else {
 	include("avaleht.php");
