@@ -1,7 +1,11 @@
 <script type="text/javascript">
+	//Selles JQuery koodijuppis vaadatakse mis leht on parajasti avatud ja vastavalt sellele on on märgistatud menüü punkt 
 	$(document).ready(function() {
+		//vaadatakse mis leht on avatud, aga vöetakse ainult see osa, mis on peale ?, ehk ?page=avaleht
 		var $currentLocation = window.location.search;
-				
+			
+		//võrreldakse .search osa header.html linkidega, ja kui on leitud smasus, siis menüü punkt saab endale uuse välimuse CSS 
+		//klassiga, teistel võetakse see ära
 		$("div a").each(function() {
 			var $href = $(this).attr("href");			
 			if ($currentLocation == $href) {			

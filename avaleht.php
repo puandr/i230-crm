@@ -2,7 +2,10 @@
 	
 	<h2>Mis leht see on?</h2>
 	
-	<p>See leht on tehtud projektina aines "Infosüsteemide analüüs ja projekteerimine". Autor : Andrei Pugatšov.</p>
+	<p>See leht on tehtud projektidena ainetes "i230 Infosüsteemide analüüs ja projekteerimine" ja "i244 Võrgurakendused I", autoriks Andrei Pugatšov. Lehe sisu
+	on seotud i230 projektiga ja lehe tehniline pool i244 projektiga.</p>
+	<p>i244 retsenseerijad võivad valida üleval menüüst punkti "i244 retsenseerijatele", seal on tehniline info selle projekti kohta.</p>
+	<p>i230 projektiga seotud info on jaotatud osadeks, kus iga osa on väljatoodud eraldi punktina menüüs.</p>
 	
 	<h2>Projekt "Personaliotsingu firma uue CRM-i projekteerimine".</h2>
 	

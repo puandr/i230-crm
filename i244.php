@@ -5,9 +5,11 @@
 	<h3>Projekti kirjeldus i244 kohalt</h3>	
 	
 	<?php
-		
+		//Toimub kontroll, kas kasutaja on sisselogitud
 		if (isset($_SESSION['kasutajanimi'])) {			
+			//Kui kasutaja on sisselogitud admin-na, siis kuvatakse talle kommentaaride kirjutamise vorm
 			if ($_SESSION['kasutajanimi'] == 'admin') {			
+				//Esialgu kuvatakse ka Log out nupp, millega saab sessiooni kustutada, failis logout.php
 				echo '
 				<h2>Väljalogimine</h2>
 				<form id="logoutform" action="?page=logout" method="POST" >
@@ -24,11 +26,14 @@
 				';
 			}
 		} else {
+			//kui kasutaja ei ole sisselogitud, siis kuvatakse talle sisselogimise vorm
 			echo '<h2>Sisselogimine</h2>';
+			//kui kasutajanimi või parool ei sobinud, siis näidatakse veateted
 			if (isset($_SESSION['viga'])) {
 				echo '<p class="viga">' . $_SESSION['viga'] .'</p>';
 				$_SESSION['viga'] = '';
 			}
+			//kui kasutajanimi või parool oli puudu, siis näidatakse vastavat veateadet
 			if (isset($_SESSION['puudu'])) {
 				echo '<p class="viga">' . $_SESSION['puudu'] . '</p>';
 				$_SESSION['puudu'] = '';
@@ -48,25 +53,14 @@
 	
 	<h2>Kommentaarid</h2>
 	
-	<?php
-	/*
-		if (!empty($_SESSION['kasutajanimi'])) {
-			echo $_SESSION['kasutajanimi'];
-		} else {
-			echo "<h1>sessioon on tühi</h1>";
-		}
-	*/
-		$host = "localhost";
-		$user = "test";
-		$pass = "t3st3r123";
-		$db = "test";
-		$connection = mysqli_connect($host, $user, $pass, $db) or die("Ei saa ühendust mootoriga- ".mysqli_error());
+	<?php		
+		global $connection;
 		
-		mysqli_query($connection, "SET CHARACTER SET UTF8") or die("Ei saanud baasi utf-8-sse - ".mysqli_error($connection));
-		
+		//Andmebaasist küsitakse kommentaaride tabeli sisu. Kuna siin ei ole muutujaid, siis ei pidanud vajlikuks teha seda turvaliselt
 		$sql="SELECT * FROM 10162828_i244_guestbook ORDER BY lisamise_aeg DESC";
 		$result = mysqli_query($connection, $sql);
 	?>
+	
 	
 	<table>
 		<tr>
@@ -76,6 +70,7 @@
 		</tr>
 		
 	<?php
+		//Tulemus näidatakse tabelina
 		while($rows = mysqli_fetch_array($result)) {
 	?>	
 		<tr>			

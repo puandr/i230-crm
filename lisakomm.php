@@ -1,17 +1,8 @@
 <div class = "main-body">
 
 <?php
-	$host = "localhost";
-	$user = "test";
-	$pass = "t3st3r123";
-	$db = "test";
-	$connection = mysqli_connect($host, $user, $pass, $db) or die("ei saa ühendust mootoriga- ".mysqli_error());
-	
-	mysqli_query($connection, "SET CHARACTER SET UTF8") or die("Ei saanud baasi utf-8-sse - ".mysqli_error($connection));
+	global $connection;
 
-	mysqli_connect("$host", "$user", "$pass")or die("cannot connect server "); 
-	
-		
 	$nimi_valideeritud = data_validation($_POST['nimi']);
 	$kommentaar_valideeritud = data_validation($_POST['kommentaar']);
 	
