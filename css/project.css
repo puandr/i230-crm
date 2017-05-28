@@ -12,6 +12,7 @@ body {
 	text-align: center;
 }
 
+/*siin on veidi üle funktsionaalsust, kui pärast leiana aega, siis teen et igal vörviteemal oleks ka oma highlight ja hover värv*/
 .menuItemActive, .menuItemInactive, .menuItemInactive a, .menuItemActive a, .menuItemActive a:hover, .menuItemInactive a:hover   {
 	display: inline-block;
 	text-align : center;		
