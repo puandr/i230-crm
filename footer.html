@@ -1,25 +1,66 @@
 <script type="text/javascript">
+	$("#sinine").click(function(){
+			Cookies.set('teema', 'sinine');		
+			location.reload();
+		});
+		$("#roheline").click(function(){
+			Cookies.set('teema', 'roheline');		
+			location.reload();
+		});
+		$("#must").click(function(){
+			Cookies.set('teema', 'must');		
+			location.reload();
+		});
+		$("#lilla").click(function(){
+			Cookies.set('teema', 'lilla');		
+			location.reload();
+		});
+	
 	//Selles JQuery koodijuppis vaadatakse mis leht on parajasti avatud ja vastavalt sellele on on märgistatud menüü punkt 
 	$(document).ready(function() {
-		//vaadatakse mis leht on avatud, aga vöetakse ainult see osa, mis on peale ?, ehk ?page=avaleht
-		var $currentLocation = window.location.search;
+		function highlightActiveMenu(){
+			//vaadatakse mis leht on avatud, aga vöetakse ainult see osa, mis on peale ?, ehk ?page=avaleht
+			var $currentLocation = window.location.search;
 
-		//kui lehte laetakse esimest korda, siis window.location.search on tühi, tuleb omistada currentLocation muutujale avalehe väärtus
-		if ($currentLocation == '') {
-			$currentLocation = '?page=avaleht';
+			//kui lehte laetakse esimest korda, siis window.location.search on tühi, tuleb omistada currentLocation muutujale avalehe väärtus
+			if ($currentLocation == '') {
+				$currentLocation = '?page=avaleht';
+			}
+			
+			//võrreldakse .search osa header.html linkidega, ja kui on leitud samasus, siis menüü punkt saab endale uuse välimuse CSS 
+			//klassiga, teistel võetakse see ära
+			$("div a").each(function() {
+				var $href = $(this).attr("href");			
+				if ($currentLocation == $href) {			
+					$(this).parent().removeClass("menuItemInactive a").addClass("menuItemActive a");
+				} else {
+					$(this).parent().removeClass("menuItemActive a").addClass("menuItemInactive a");
+				}
+			});
 		}
 		
-		//võrreldakse .search osa header.html linkidega, ja kui on leitud samasus, siis menüü punkt saab endale uuse välimuse CSS 
-		//klassiga, teistel võetakse see ära
-		$("div a").each(function() {
-			var $href = $(this).attr("href");			
-			if ($currentLocation == $href) {			
-				$(this).parent().removeClass("menuItemInactive").addClass("menuItemActive");
-			} else {
-				$(this).parent().removeClass("menuItemActive").addClass("menuItemInactive");
-			}
-		});
+		//JQuery Cookies-st võetakse teema muutuja väärtust ja vastavalt sellele muudetakse CSS-i värve
+		if (Cookies.get('teema') == 'sinine') {
+			$("h1, h2, h3, h4").css("color", "#0e398f");
+			$("#menu").css("background","blue");
+		}	
 		
+		if (Cookies.get('teema') == 'roheline') {
+			$("h1, h2, h3, h4").css("color", "#006600");
+			$("#menu").css("background","4CAF50");			
+		}	
+		
+		if (Cookies.get('teema') == 'must') {
+			$("h1, h2, h3, h4").css("color", "#000");
+			$("#menu").css("background","black");			
+		}
+		
+		if (Cookies.get('teema') == 'lilla') {
+			$("h1, h2, h3, h4").css("color", "#6a009c");
+			$("#menu").css("background","purple");			
+		}	
+		
+		highlightActiveMenu();		
 	});
 </script>
 </body>

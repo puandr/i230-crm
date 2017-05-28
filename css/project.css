@@ -1,7 +1,9 @@
+/*et menüü oleks servast servani*/
 body {
     margin: 0;
 }
 
+/*menüü häälestused*/
 #menu {
 	background: #4CAF50;
 	position: fixed;
@@ -10,41 +12,31 @@ body {
 	text-align: center;
 }
 
-.menuItemActive, .menuItemInactive {
+.menuItemActive, .menuItemInactive, .menuItemInactive a, .menuItemActive a, .menuItemActive a:hover, .menuItemInactive a:hover   {
 	display: inline-block;
+	text-align : center;		
+	text-decoration: none;
 }
 
-.menuItemInactive a {
-	display: inline-block;
-	text-align : center;
-	
+.menuItemInactive a, .menuItemActive a, .menuItemActive a:hover, .menuItemInactive a:hover   {
 	padding:5px 15px;
+}
+
+.menuItemInactive a {	
 	color:white;
-	text-decoration: none;
 }
 
-.menuItemActive a, .menuItemActive.active a, .menuItemInactive a:active {
-	display: inline-block;
-	text-align : center;
-	
-	padding:5px 15px;
-	color: #4CAF50;
-	background-color: white;
-	text-decoration: none;
+.menuItemActive a {	
+	color : orange;
+	background-color: white;	
 }
 
 .menuItemActive a:hover, .menuItemInactive a:hover {
-	background: #dec;
-	color: green;
-	padding:5px 15px;
-	text-decoration: none;
+	background: orange;
+	color: white;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
+/*et menüü ei katakse lehe sisu, tuleb sisu nihutada allapoole, ning ilusma resultaadi jaoks jätta vahed servadest*/
 .main-body {
 	margin-left:10%;
 	margin-right:10%;
@@ -53,12 +45,17 @@ img {
 	height:1000px;
 }
 
+/*et pilt jääks oma suuruse poolest ekraani sisse*/
+img {
+    max-width: 100%;
+    height: auto;
+}
 
+/*tabelite häälestus*/
 table {
 	padding: 10px;
 	border-collapse: collapse;	
 }
-
 
 td {
 	border : 1px solid black;
@@ -82,34 +79,62 @@ th {
 	width: 50%
 }
 
-
-p, h1, h2, h3, h4, table, li, .menuItemActive, .menuItemInactive{
-	font-family: 'Open Sans', sans-serif;
-}
-
-h2 {
-	font-size: 1.3em;
-	color: #006600;
-}
-
-h3 {
-	font-size: 1.1em;
-	color: #006600;
-}
-
-h4 {
-	font-size: 1em;
-	color: #006600;
-}
-
-.viga {
-	color: red;
-}
-
 .nime_veerg {
 	width: 35%;
 }
 
 .aja_veerg {
 	width: 10%;
+}
+
+/*paragrahvide ja pealkirjade häälestused*/
+p, h1, h2, h3, h4, table, li, .menuItemActive, .menuItemInactive{
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	color: #006600;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+h3 {
+	font-size: 1.1em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+/*et veateated oleksid punast värvi*/
+.viga {
+	color: red;
+}
+
+#sinine {
+	background-color: #134bbd;
+}
+
+#roheline {
+	background-color: #4CAF50;
+}
+
+#must {
+	background-color: #000;
+}
+
+#lilla {
+	background-color: purple;
+}
+
+.varviteemavalik{
+	display : inline-block;
+	height: 50px;
+	width: 50px;
 }
