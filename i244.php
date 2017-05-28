@@ -74,9 +74,9 @@
 		while($rows = mysqli_fetch_array($result)) {
 	?>	
 		<tr>			
-			<td width = 35%><?php echo htmlspecialchars($rows['nimi']); ?></td>
+			<td class = "nime_veerg"><?php echo htmlspecialchars($rows['nimi']); ?></td>
 			<td><?php echo htmlspecialchars($rows['kommentaar']); ?></td>
-			<td width = 10%><?php echo htmlspecialchars($rows['lisamise_aeg']); ?></td>			
+			<td class = "aja_veerg"><?php echo htmlspecialchars($rows['lisamise_aeg']); ?></td>			
 		</tr>		
 	<?php
 		}
