@@ -115,7 +115,7 @@
 	?>
 	
 	<h2>Kommentaarid</h2>
-	
+	<p>Kommentaare saavad lisada ainult sisselogitud kasutajad.</p>
 	<?php		
 		global $connection;
 		
