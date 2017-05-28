@@ -9,11 +9,7 @@
 	<div class = "varviteemavalik" id="roheline"></div>
 	<div class = "varviteemavalik" id="must"></div>
 	<div class = "varviteemavalik" id="lilla"></div>
-	<script type="text/javascript">
 		
-	</script>
-	
-	
 	<?php
 		//Toimub kontroll, kas kasutaja on sisselogitud
 		if (isset($_SESSION['kasutajanimi'])) {			

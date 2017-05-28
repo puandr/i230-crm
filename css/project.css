@@ -117,6 +117,7 @@ h4 {
 	color: red;
 }
 
+/*värviteema valikute ID-de värvid*/
 #sinine {
 	background-color: #134bbd;
 }
@@ -133,6 +134,7 @@ h4 {
 	background-color: purple;
 }
 
+/*värviteema DIV-de häälestused*/
 .varviteemavalik{
 	display : inline-block;
 	height: 50px;

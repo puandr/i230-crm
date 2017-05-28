@@ -1,20 +1,22 @@
 <script type="text/javascript">
+	//Kui klikatakse DIV elemendil mis vastutab värvi teema valimise eest, siis vastav värv krijutatajas JQuery küpsise 'teema' muutujasse
+	//ja toimub lehe värskendamine, et antud värvi muutus jõustus
 	$("#sinine").click(function(){
 			Cookies.set('teema', 'sinine');		
 			location.reload();
-		});
-		$("#roheline").click(function(){
+	});
+	$("#roheline").click(function(){
 			Cookies.set('teema', 'roheline');		
 			location.reload();
-		});
-		$("#must").click(function(){
+	});
+	$("#must").click(function(){
 			Cookies.set('teema', 'must');		
 			location.reload();
-		});
-		$("#lilla").click(function(){
+	});
+	$("#lilla").click(function(){
 			Cookies.set('teema', 'lilla');		
 			location.reload();
-		});
+	});
 	
 	//Selles JQuery koodijuppis vaadatakse mis leht on parajasti avatud ja vastavalt sellele on on märgistatud menüü punkt 
 	$(document).ready(function() {
